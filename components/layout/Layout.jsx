@@ -1,16 +1,23 @@
-// import Head from 'next/head';
+import Head from 'next/head';
+import React from 'react';
 
-export default function Home() {
+const Layout = ({ children }) => {
   return (
     <div>
-      {/* <Head>
+      <Head>
         <title>Portfolio: Franco Ortega - Software Engineer</title>
         <meta
           name='description'
           content='Portfolio site for Franco Ortega - Software Engineer'
         />
         <link rel='icon' href='/favicon.ico' />
-      </Head> */}
+      </Head>
+      <header>
+        <h1>Franco Ortega - Software Engineer</h1>
+      </header>
+      <main>{children}</main>
     </div>
   );
-}
+};
+
+export default Layout;
