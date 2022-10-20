@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import React from 'react';
+import styles from './Layout.module.scss';
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className={styles.Layout}>
       <Head>
         <title>Portfolio: Franco Ortega - Software Engineer</title>
         <meta
