@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import Landing from '../components/landing/Landing';
 import Layout from '../components/layout/Layout';
@@ -7,12 +8,15 @@ function MyApp({ Component, pageProps }) {
   const [landing, setLanding] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
   const [noPreference, setNoPreference] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     setNoPreference(
       window.matchMedia('(prefers-reduced-motion: no-preference)').matches
     );
-  }, []);
+
+    if (router.pathname !== '/') setLanding(false);
+  }, [router]);
 
   const onWelcomeClick = () => {
     if (noPreference) setFadeOut(true);
