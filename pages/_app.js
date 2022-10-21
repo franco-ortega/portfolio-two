@@ -6,7 +6,9 @@ import '../styles/globals.css';
 function MyApp({ Component, pageProps }) {
   const [landing, setLanding] = useState(true);
 
-  if (landing) return <Landing />;
+  const onWelcomeClick = () => setLanding(false);
+
+  if (landing) return <Landing handler={onWelcomeClick} />;
 
   return (
     <Layout>
