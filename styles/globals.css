@@ -6,6 +6,11 @@
 
 :root {
   --bgcolor-primary: hsl(0, 0%, 95%);
+  --bgcolor-secondary: hsl(300, 100%, 15%);
+  --color-light: var(--bgcolor-primary);
+  --font-size-medium: 1rem;
+  --font-lucida-sans: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 html,
