@@ -8,7 +8,10 @@
   --bgcolor-primary: hsl(0, 0%, 95%);
   --bgcolor-secondary: hsl(300, 100%, 15%);
   --color-light: var(--bgcolor-primary);
+  --color-dark: var(--bgcolor-secondary);
   --font-size-medium: 1rem;
+  --font-size-large: 1.75rem;
+  --font-size-xlarge: 2.5rem;
   --font-lucida-sans: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
