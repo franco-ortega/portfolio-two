@@ -1,9 +1,9 @@
 import Button from '../buttons/Button';
 import styles from './Landing.module.scss';
 
-const Landing = ({ handler }) => {
+const Landing = ({ handler, fadeOut }) => {
   return (
-    <div className={styles.Landing}>
+    <div className={`${styles.Landing} ${fadeOut && styles.FadeOut}`}>
       <div>
         <h1>Franco Ortega</h1>
         <h2>Software Engineer</h2>

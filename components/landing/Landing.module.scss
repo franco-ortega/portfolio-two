@@ -1,3 +1,5 @@
+@use '../../styles/scss/' as *;
+
 .Landing {
   background-color: var(--bgcolor-primary);
   min-height: 100vh;
@@ -5,6 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: opacity 1000ms ease;
 
   div {
     border-radius: 10rem;
@@ -31,5 +35,11 @@
       margin-top: 0.25rem;
       margin-bottom: 1rem;
     }
+  }
+}
+
+@include motion-allowed() {
+  .FadeOut {
+    opacity: 0;
   }
 }
