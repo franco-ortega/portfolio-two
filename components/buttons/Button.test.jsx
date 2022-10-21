@@ -1,12 +1,26 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import Button from './Button';
 
-describe('renders Button component', () => {
+describe('Button component tests', () => {
   it('renders a button', () => {
-    render(<Button handler={() => {}} text={'Hello'} />);
+    const content = 'Hello';
+    render(<Button handler={() => {}} text={content} />);
 
-    const button = screen.getByText('Hello');
+    const button = screen.getByText(content);
 
     expect(button).toBeInTheDocument();
+  });
+
+  it('clicks a button', () => {
+    const content = 'Hello';
+    const handler = jest.fn();
+
+    render(<Button handler={handler} text={content} />);
+
+    const button = screen.getByText(content);
+
+    fireEvent.click(button);
+
+    expect(handler).toHaveBeenCalled();
   });
 });
