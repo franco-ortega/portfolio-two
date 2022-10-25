@@ -8,3 +8,7 @@
 
 1. `dev`
    1. `feature/layout`
+
+## TO DO
+
+1. Find font for landing page text
