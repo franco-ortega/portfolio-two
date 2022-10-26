@@ -10,8 +10,8 @@
   --color-light: var(--bgcolor-primary);
   --color-dark: var(--bgcolor-secondary);
   --font-size-medium: 1rem;
-  --font-size-large: 1.75rem;
-  --font-size-xlarge: 2.5rem;
+  --font-size-large: 2.5rem;
+  --font-size-xlarge: 3.5rem;
   --font-lucida-sans: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -30,14 +30,14 @@ a {
 @font-face {
   font-family: 'Chancery Cursive';
   src: url('../fonts/chancery-cursive-font/ChanceryCursive-dxD6.ttf');
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gourdie Cursive';
   src: url('../fonts/gourdie-cursive-font/GourdieCursive-0g59.ttf');
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
 }
 
