@@ -28,9 +28,23 @@ a {
 }
 
 @font-face {
-  font-family: 'Chancery Cursice';
+  font-family: 'Chancery Cursive';
   src: url('../fonts/chancery-cursive-font/ChanceryCursive-dxD6.ttf');
   font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gourdie Cursive';
+  src: url('../fonts/gourdie-cursive-font/GourdieCursive-0g59.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gourdie Cursive Deux';
+  src: url('../fonts/gourdie-cursive-font/GourdieCursiveDeux-e1gm.ttf');
+  font-weight: 400;
   font-style: normal;
 }
 
