@@ -3,3 +3,27 @@
     @content;
   }
 }
+
+@mixin fade($direction) {
+  @include motion-allowed() {
+    animation: $direction 1000ms ease forwards;
+
+    @keyframes in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 100;
+      }
+    }
+
+    @keyframes out {
+      0% {
+        opacity: 100;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+}

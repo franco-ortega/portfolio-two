@@ -10,21 +10,52 @@
   --color-light: var(--bgcolor-primary);
   --color-dark: var(--bgcolor-secondary);
   --font-size-medium: 1rem;
-  --font-size-large: 1.75rem;
-  --font-size-xlarge: 2.5rem;
+  --font-size-large: 2.25rem;
+  --font-size-xlarge: 3.25rem;
   --font-lucida-sans: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --font-landing-page: 'Charlie Zonk', serif;
+  --font-primary: 'Salma Pro Medium', sans-serif;
 }
 
 html,
 body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  font-family: 'Salma Pro Medium';
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Chancery Cursive';
+  src: url('../fonts/chancery-cursive-font/ChanceryCursive-dxD6.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Charlie Zonk';
+  src: url('../fonts/Charlie Zonk.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Salma Pro Medium';
+  src: url('../fonts/salma-pro-font/SalmaproMedium-0Wooo.otf');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Salma Pro Medium Narrow';
+  src: url('../fonts/salma-pro-font/SalmaproMediumnarrow-VG5v6.otf');
+  font-weight: 600;
+  font-style: normal;
 }
 
 /* @media (prefers-color-scheme: dark) {
