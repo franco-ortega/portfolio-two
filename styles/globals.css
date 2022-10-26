@@ -11,9 +11,10 @@
   --color-dark: var(--bgcolor-secondary);
   --font-size-medium: 1rem;
   --font-size-large: 2.25rem;
-  --font-size-xlarge: 3rem;
+  --font-size-xlarge: 3.25rem;
   --font-lucida-sans: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --font-landing-page: 'Charlie Zonk', serif;
 }
 
 html,
