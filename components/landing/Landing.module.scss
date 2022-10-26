@@ -39,8 +39,10 @@
   }
 }
 
-@include motion-allowed() {
-  .FadeOut {
-    opacity: 0;
-  }
+.FadeIn {
+  @include fade(in);
+}
+
+.FadeOut {
+  @include fade(out);
 }
