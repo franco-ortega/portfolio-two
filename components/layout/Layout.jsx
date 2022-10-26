@@ -3,7 +3,7 @@ import styles from './Layout.module.scss';
 
 const Layout = ({ children }) => {
   return (
-    <div className={styles.Layout}>
+    <div className={styles.Layout} data-testid='layout'>
       <Head>
         <title>Portfolio: Franco Ortega - Software Engineer</title>
         <meta
