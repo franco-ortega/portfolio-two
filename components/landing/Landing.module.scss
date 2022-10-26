@@ -1,0 +1,45 @@
+@use '../../styles/scss/' as *;
+
+.Landing {
+  background-color: var(--bgcolor-primary);
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: opacity 1000ms ease;
+
+  div {
+    border-radius: 10rem;
+    box-shadow: 0.3rem 0.3rem 0 0.3rem hsl(350, 100%, 88%);
+    width: max(20rem, 30%);
+    margin-inline: 1rem;
+    padding-block: 2rem;
+    text-align: center;
+
+    h1,
+    h2 {
+      color: var(--color-dark);
+    }
+
+    h1 {
+      font-size: var(--font-size-xlarge);
+    }
+
+    h2 {
+      font-size: var(--font-size-large);
+    }
+
+    h2 {
+      margin-top: 0.25rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@include motion-allowed() {
+  .FadeOut {
+    opacity: 0;
+  }
+}
