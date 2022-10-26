@@ -5,9 +5,9 @@ const Landing = ({ handler, fadeOut }) => {
   console.log({ fadeOut });
   return (
     <div
-      className={`${styles.Landing} ${fadeOut && styles.FadeOut} ${
-        styles.FadeIn
-      }`}
+      className={`${styles.Landing} ${styles.FadeIn} ${
+        fadeOut && styles.FadeOut
+      } `}
     >
       <div>
         <h1>Franco Ortega</h1>

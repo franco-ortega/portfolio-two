@@ -39,30 +39,10 @@
   }
 }
 
-@include motion-allowed() {
-  .FadeIn {
-    animation: fadeIn 1000ms ease forwards;
+.FadeIn {
+  @include fade(in);
+}
 
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 100;
-      }
-    }
-  }
-
-  .FadeOut {
-    animation: fadeOut 1000ms ease forwards;
-
-    @keyframes fadeOut {
-      0% {
-        opacity: 100;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
-  }
+.FadeOut {
+  @include fade(out);
 }
