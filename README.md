@@ -8,6 +8,8 @@
 
 1. `dev`
    1. `feature/layout`
+   1. `feature/button`
+   1. `feature/landing-page`
 
 ## TO DO
 
