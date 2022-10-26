@@ -2,7 +2,6 @@ import Button from '../buttons/Button';
 import styles from './Landing.module.scss';
 
 const Landing = ({ handler, fadeOut }) => {
-  console.log({ fadeOut });
   return (
     <div
       className={`${styles.Landing} ${styles.FadeIn} ${

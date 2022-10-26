@@ -8,15 +8,18 @@ export const useLanding = () => {
   const router = useRouter();
 
   useEffect(() => {
+    // checks preference to determine when Landing is removed in setTimeOut below
     setNoPreference(
       window.matchMedia('(prefers-reduced-motion: no-preference)').matches
     );
 
+    // only display Landing on home page
     if (router.pathname !== '/') setLanding(false);
   }, [router]);
 
   const onWelcomeClick = () => {
     if (noPreference) setFadeOut(true);
+
     setTimeout(
       () => {
         setLanding(false);
