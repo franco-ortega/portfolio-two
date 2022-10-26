@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import Layout from './Layout';
 
-describe('Button component tests', () => {
+describe('Layout component tests', () => {
   it('renders layout', () => {
     render(<Layout />);
 
