@@ -27,6 +27,13 @@ a {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: 'Chancery Cursice';
+  src: url('../fonts/chancery-cursive-font/ChanceryCursive-dxD6.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
