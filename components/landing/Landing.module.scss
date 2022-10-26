@@ -40,7 +40,29 @@
 }
 
 @include motion-allowed() {
+  .FadeIn {
+    animation: fadeIn 1000ms ease forwards;
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 100;
+      }
+    }
+  }
+
   .FadeOut {
-    opacity: 0;
+    animation: fadeOut 1000ms ease forwards;
+
+    @keyframes fadeOut {
+      0% {
+        opacity: 100;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
   }
 }
