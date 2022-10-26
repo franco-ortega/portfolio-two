@@ -1,32 +1,10 @@
 import Head from 'next/head';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import { useLanding } from '../../hooks/useLanding';
 import Landing from '../landing/Landing';
 import styles from './Layout.module.scss';
 
 const Layout = ({ children }) => {
-  const [landing, setLanding] = useState(true);
-  const [fadeOut, setFadeOut] = useState(false);
-  const [noPreference, setNoPreference] = useState(false);
-  const router = useRouter();
-
-  useEffect(() => {
-    setNoPreference(
-      window.matchMedia('(prefers-reduced-motion: no-preference)').matches
-    );
-
-    if (router.pathname !== '/') setLanding(false);
-  }, [router]);
-
-  const onWelcomeClick = () => {
-    if (noPreference) setFadeOut(true);
-    setTimeout(
-      () => {
-        setLanding(false);
-      },
-      noPreference ? 1000 : 0
-    );
-  };
+  const { landing, fadeOut, onWelcomeClick } = useLanding();
 
   if (landing) return <Landing handler={onWelcomeClick} fadeOut={fadeOut} />;
 
