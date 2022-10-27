@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './SocialLink.module.scss';
 
-const SocialLink = ({ title, url, icon, iconStyle }) => {
+const SocialLink = ({ title, url, icon }) => {
   return (
     <a
       className={styles.SocialLink}
@@ -10,7 +10,7 @@ const SocialLink = ({ title, url, icon, iconStyle }) => {
       rel='noreferrer'
       target={'blank'}
     >
-      <FontAwesomeIcon icon={icon} style={iconStyle} />
+      <FontAwesomeIcon icon={icon} style={{ fontSize: 30 }} />
     </a>
   );
 };

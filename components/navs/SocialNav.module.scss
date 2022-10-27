@@ -1,0 +1,11 @@
+.SocialNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
