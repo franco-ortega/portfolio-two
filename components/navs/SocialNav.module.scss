@@ -1,13 +1,10 @@
 .SocialNav {
   background-color: var(--color-dark);
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  width: 100%;
+  text-align: center;
 
   ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }

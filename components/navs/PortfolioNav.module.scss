@@ -1,11 +1,10 @@
 .PortfolioNav {
   background-color: var(--color-dark);
+  text-align: center;
 
   ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
     li {
       color: var(--color-accent);
