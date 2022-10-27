@@ -6,10 +6,10 @@ describe('Social Link component tests', () => {
   it('renders a link', () => {
     const content = 'GitHub';
     const url = 'https://github.com/franco-ortega';
-    const style = { fontSize: 30 };
+    const iconStyle = { fontSize: 30 };
 
     render(
-      <SocialLink title={content} url={url} icon={faGithub} style={style} />
+      <SocialLink title={content} url={url} icon={faGithub} style={iconStyle} />
     );
 
     const link = screen.getByRole('link');
