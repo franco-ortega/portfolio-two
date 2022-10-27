@@ -1,23 +1,16 @@
 import { render, screen } from '@testing-library/react';
 import SocialLink from './SocialLink';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-describe('Nav Link component tests', () => {
-  it('renders nav link text', () => {
-    const content = 'Home';
-    const url = '/';
-
-    render(<SocialLink text={content} url={url} />);
-
-    const link = screen.getByText(content);
-
-    expect(link).toBeInTheDocument();
-  });
-
+describe('Social Link component tests', () => {
   it('renders a link', () => {
-    const content = 'About';
-    const url = '/about';
+    const content = 'GitHub';
+    const url = 'https://github.com/franco-ortega';
+    const style = { fontSize: 30 };
 
-    render(<SocialLink text={content} url={url} />);
+    render(
+      <SocialLink title={content} url={url} icon={faGithub} style={style} />
+    );
 
     const link = screen.getByRole('link');
 
