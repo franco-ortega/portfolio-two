@@ -5,25 +5,23 @@
 }
 
 :root {
-  --bgcolor-primary: hsl(0, 0%, 95%);
-  --bgcolor-secondary: hsl(300, 100%, 15%);
-  --color-light: var(--bgcolor-primary);
-  --color-dark: var(--bgcolor-secondary);
+  --color-light: hsl(0, 0%, 95%);
+  --color-dark: hsl(300, 100%, 15%);
+  --color-accent: hsl(195, 53%, 79%);
   --font-size-medium: 1rem;
+  --font-size-nav: 1.25rem;
   --font-size-large: 2.25rem;
   --font-size-xlarge: 3.25rem;
   --font-lucida-sans: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  --font-landing-page: 'Charlie Zonk', serif;
-  --font-primary: 'Salma Pro Medium', sans-serif;
+  --font-family-primary: 'Salma Pro Medium', sans-serif;
+  --font-family-cursive: 'Charlie Zonk', serif;
+  --line-height-nav: 1.25rem;
 }
 
 html,
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
-  font-family: 'Salma Pro Medium';
+  font-family: var(--font-family-primary);
 }
 
 a {
