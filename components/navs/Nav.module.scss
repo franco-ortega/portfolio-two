@@ -1,0 +1,11 @@
+.Nav {
+  background-color: var(--color-dark);
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  nav:last-child() ul {
+    position: absolute;
+    bottom: 0;
+  }
+}
