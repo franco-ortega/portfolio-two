@@ -4,7 +4,9 @@ import NavLink from './NavLink';
 describe('Nav Link component tests', () => {
   it('renders nav link text', () => {
     const content = 'Home';
-    render(<NavLink text={content} url={'/'} />);
+    const url = '/';
+
+    render(<NavLink text={content} url={url} />);
 
     const link = screen.getByText(content);
 
@@ -12,8 +14,10 @@ describe('Nav Link component tests', () => {
   });
 
   it('renders a link', () => {
+    const content = 'About';
     const url = '/about';
-    render(<NavLink text={'About'} url={url} />);
+
+    render(<NavLink text={content} url={url} />);
 
     const link = screen.getByRole('link');
 
