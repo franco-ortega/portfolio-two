@@ -2,9 +2,9 @@ import { render, screen } from '@testing-library/react';
 import NavLink from './NavLink';
 
 describe('Nav Link component tests', () => {
-  it('renders a nav link', () => {
+  it('renders nav link text', () => {
     const content = 'Home';
-    render(<NavLink title={content} url={''} />);
+    render(<NavLink text={content} url={''} />);
 
     const link = screen.getByText(content);
 
