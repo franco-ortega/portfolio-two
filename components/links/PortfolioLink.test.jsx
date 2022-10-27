@@ -1,12 +1,12 @@
 import { render, screen } from '@testing-library/react';
-import NavLink from './NavLink';
+import PortfolioLink from './PortfolioLink';
 
 describe('Nav Link component tests', () => {
   it('renders nav link text', () => {
     const content = 'Home';
     const url = '/';
 
-    render(<NavLink text={content} url={url} />);
+    render(<PortfolioLink text={content} url={url} />);
 
     const link = screen.getByText(content);
 
@@ -17,7 +17,7 @@ describe('Nav Link component tests', () => {
     const content = 'About';
     const url = '/about';
 
-    render(<NavLink text={content} url={url} />);
+    render(<PortfolioLink text={content} url={url} />);
 
     const link = screen.getByRole('link');
 

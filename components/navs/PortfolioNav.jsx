@@ -1,4 +1,4 @@
-import NavLink from '../links/NavLink';
+import PortfolioLink from '../links/PortfolioLink';
 import styles from './PortfolioNav.module.scss';
 
 const PortfolioNav = () => {
@@ -6,13 +6,13 @@ const PortfolioNav = () => {
     <nav className={styles.PortfolioNav} data-testid='portfolio-nav'>
       <ul>
         <li>
-          <NavLink text={'Home'} url={'/'} />
+          <PortfolioLink text={'Home'} url={'/'} />
         </li>
         <li>
-          <NavLink text={'Projects'} url={'/projects'} />
+          <PortfolioLink text={'Projects'} url={'/projects'} />
         </li>
         <li>
-          <NavLink text={'About'} url={'/about'} />
+          <PortfolioLink text={'About'} url={'/about'} />
         </li>
         <li>
           <a href='/Resume_Franco_Ortega.pdf' rel='noreferrer' target='_blank'>
