@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from 'PortfolioLink.module.scss';
+import styles from './PortfolioLink.module.scss';
 
 const PortfolioLink = ({ text, url }) => {
   return (

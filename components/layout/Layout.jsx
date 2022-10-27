@@ -1,3 +1,4 @@
+import Nav from '../navs/Nav';
 import styles from './Layout.module.scss';
 
 const Layout = ({ children }) => {
@@ -6,6 +7,7 @@ const Layout = ({ children }) => {
       <header>
         <h1>Franco Ortega - Software Engineer</h1>
       </header>
+      <Nav />
       <main>{children}</main>
     </div>
   );
