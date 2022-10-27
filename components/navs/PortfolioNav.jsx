@@ -15,7 +15,7 @@ const PortfolioNav = () => {
           <PortfolioLink text={'About'} url={'/about'} />
         </li>
         <li>
-          <a href='/Resume_Franco_Ortega.pdf' rel='noreferrer' target='_blank'>
+          <a href='/Resume _Franco_Ortega.pdf' rel='noreferrer' target='_blank'>
             Resume
           </a>
         </li>
