@@ -9,8 +9,6 @@ import SocialLink from '../links/SocialLink';
 import styles from './SocialNav.module.scss';
 
 const SocialNav = () => {
-  const iconStyle = { fontSize: 30 };
-
   return (
     <nav className={styles.SocialNav} data-testid='social-nav'>
       <ul>
@@ -19,7 +17,6 @@ const SocialNav = () => {
             title={'GitHub'}
             url={'https://github.com/franco-ortega'}
             icon={faGithub}
-            iconStyle={iconStyle}
           />
         </li>
         <li>
@@ -27,7 +24,6 @@ const SocialNav = () => {
             title={'LinkedIn'}
             url={'https://www.linkedin.com/in/francoortega/'}
             icon={faLinkedin}
-            iconStyle={iconStyle}
           />
         </li>
         <li>
@@ -35,7 +31,6 @@ const SocialNav = () => {
             title={'Twitter'}
             url={'https://twitter.com/FrancoOrtegaDev'}
             icon={faTwitter}
-            iconStyle={iconStyle}
           />
         </li>
         <li>
@@ -43,7 +38,6 @@ const SocialNav = () => {
             title={'Instagram'}
             url={'https://www.instagram.com/reefwoodcartography/'}
             icon={faInstagram}
-            iconStyle={iconStyle}
           />
         </li>
       </ul>
