@@ -1,2 +1,15 @@
 .Nav {
+  color: var(--color-accent);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-nav);
+  line-height: var(--line-height-nav);
+  text-align: center;
+
+  nav {
+    background-color: var(--color-dark);
+    min-height: var(--nav-min-height);
+
+    display: flex;
+    align-items: center;
+  }
 }
