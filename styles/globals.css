@@ -18,6 +18,7 @@
   --font-family-primary: 'Salma Pro Medium', sans-serif;
   --font-family-cursive: 'Charlie Zonk', serif;
   --line-height-nav: 1.25rem;
+  --nav-min-height: 2.5rem;
 }
 
 html,

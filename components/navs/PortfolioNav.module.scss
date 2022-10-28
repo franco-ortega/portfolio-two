@@ -1,8 +1,13 @@
 .PortfolioNav {
   background-color: var(--color-dark);
+  min-height: var(--nav-min-height);
   text-align: center;
 
+  display: flex;
+  align-items: center;
+
   ul {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
