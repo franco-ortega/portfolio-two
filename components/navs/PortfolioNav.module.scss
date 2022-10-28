@@ -1,7 +1,25 @@
+@use '../../styles/scss/' as *;
+
 .PortfolioNav {
   ul {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include motion-allowed() {
+    ul {
+      animation: slideDown 1000ms ease forwards;
+    }
+
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-125%);
+      }
+
+      100% {
+        transform: translateY(0%);
+      }
+    }
   }
 }
