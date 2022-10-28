@@ -1,8 +1,21 @@
 .PortfolioNav {
+  background-color: var(--color-dark);
+  min-height: var(--nav-min-height);
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+
   ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    li {
+      color: var(--color-accent);
+      font-family: var(--font-family-primary);
+      font-size: var(--font-size-nav);
+      line-height: var(--line-height-nav);
+    }
   }
 }

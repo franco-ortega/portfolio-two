@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 :root {
@@ -17,6 +18,7 @@
   --font-family-primary: 'Salma Pro Medium', sans-serif;
   --font-family-cursive: 'Charlie Zonk', serif;
   --line-height-nav: 1.25rem;
+  --nav-min-height: 2.5rem;
 }
 
 html,
