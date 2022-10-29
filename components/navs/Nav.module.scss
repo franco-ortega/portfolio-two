@@ -1,2 +1,27 @@
+@use '../../styles/scss/' as *;
+
 .Nav {
+  color: var(--color-accent);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-nav);
+  line-height: var(--line-height-nav);
+  text-align: center;
+
+  nav {
+    background-color: var(--color-dark);
+    min-height: var(--nav-min-height);
+
+    display: flex;
+    align-items: center;
+  }
+
+  @include media-query(small) {
+    background-color: var(--color-dark);
+    padding-block: 1rem;
+    padding-inline: 0.75rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
