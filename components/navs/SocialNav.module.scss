@@ -15,16 +15,38 @@
 
   @include motion-allowed() {
     ul {
-      animation: slideUp 1000ms ease forwards;
+      animation: slideSocialNav 1000ms ease forwards;
+
+      @keyframes slideSocialNav {
+        0% {
+          transform: translateY(125%);
+        }
+
+        100% {
+          transform: translateY(0%);
+        }
+      }
+    }
+  }
+
+  @include media-query(small) {
+    position: relative;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
     }
 
-    @keyframes slideUp {
-      0% {
-        transform: translateY(125%);
-      }
+    @include motion-allowed() {
+      @keyframes slideSocialNav {
+        0% {
+          transform: translateX(-125%);
+        }
 
-      100% {
-        transform: translateY(0%);
+        100% {
+          transform: translateX(0%);
+        }
       }
     }
   }

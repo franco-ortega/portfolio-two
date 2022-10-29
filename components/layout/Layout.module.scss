@@ -1,4 +1,11 @@
+@use '../../styles/scss/' as *;
+
 .Layout {
   background-color: var(--color-light);
   min-height: 100vh;
+
+  @include media-query(small) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
 }

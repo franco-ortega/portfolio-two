@@ -9,16 +9,35 @@
 
   @include motion-allowed() {
     ul {
-      animation: slideDown 1000ms ease forwards;
+      animation: slidePortfolioNav 1000ms ease forwards;
+      @keyframes slidePortfolioNav {
+        0% {
+          transform: translateY(-125%);
+        }
+
+        100% {
+          transform: translateY(0%);
+        }
+      }
+    }
+  }
+
+  @include media-query(small) {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
     }
 
-    @keyframes slideDown {
-      0% {
-        transform: translateY(-125%);
-      }
+    @include motion-allowed() {
+      @keyframes slidePortfolioNav {
+        0% {
+          transform: translateX(-125%);
+        }
 
-      100% {
-        transform: translateY(0%);
+        100% {
+          transform: translateX(0%);
+        }
       }
     }
   }
