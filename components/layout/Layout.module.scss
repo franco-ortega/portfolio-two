@@ -8,4 +8,6 @@
     display: grid;
     grid-template-columns: auto 1fr;
   }
+
+  @include fade(in);
 }
