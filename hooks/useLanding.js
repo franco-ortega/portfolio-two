@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
 export const useLanding = () => {
-  const [landing, setLanding] = useState(true);
+  const [landing, setLanding] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
   const [noPreference, setNoPreference] = useState(false);
   const router = useRouter();
@@ -14,7 +14,7 @@ export const useLanding = () => {
     );
 
     // only display Landing on home page
-    if (router.pathname !== '/') setLanding(false);
+    if (router.pathname === '/') setLanding(true);
   }, [router]);
 
   const onWelcomeClick = () => {
