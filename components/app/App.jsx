@@ -3,7 +3,7 @@ import { useLanding } from '../../hooks/useLanding';
 import Landing from '../landing/Landing';
 import Layout from '../layout/Layout';
 
-const App = () => {
+const App = ({ children }) => {
   const { landing, fadeOut, onWelcomeClick } = useLanding();
   return (
     <div>
@@ -18,7 +18,7 @@ const App = () => {
       {landing ? (
         <Landing handler={onWelcomeClick} fadeOut={fadeOut} />
       ) : (
-        <Layout />
+        <Layout>{children}</Layout>
       )}
     </div>
   );

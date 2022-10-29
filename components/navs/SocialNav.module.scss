@@ -1,11 +1,7 @@
-.SocialNav {
-  background-color: var(--color-dark);
-  width: 100%;
-  min-height: var(--nav-min-height);
-  text-align: center;
+@use '../../styles/scss/' as *;
 
-  display: flex;
-  align-items: center;
+.SocialNav {
+  width: 100%;
 
   position: absolute;
   bottom: 0;
@@ -15,5 +11,43 @@
     grid-template-columns: repeat(4, 1fr);
     width: 85%;
     margin-inline: auto;
+  }
+
+  @include motion-allowed() {
+    ul {
+      animation: slideSocialNav 1000ms ease forwards;
+    }
+
+    @keyframes slideSocialNav {
+      0% {
+        transform: translateY(125%);
+      }
+
+      100% {
+        transform: translateY(0%);
+      }
+    }
+  }
+
+  @include media-query(small) {
+    position: relative;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    @include motion-allowed() {
+      @keyframes slideSocialNav {
+        0% {
+          transform: translateX(-125%);
+        }
+
+        100% {
+          transform: translateX(0%);
+        }
+      }
+    }
   }
 }
