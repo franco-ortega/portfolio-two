@@ -10,14 +10,15 @@
   @include motion-allowed() {
     ul {
       animation: slidePortfolioNav 1000ms ease forwards;
-      @keyframes slidePortfolioNav {
-        0% {
-          transform: translateY(-125%);
-        }
+    }
 
-        100% {
-          transform: translateY(0%);
-        }
+    @keyframes slidePortfolioNav {
+      0% {
+        transform: translateY(-125%);
+      }
+
+      100% {
+        transform: translateY(0%);
       }
     }
   }
