@@ -39,10 +39,6 @@
   }
 }
 
-.FadeIn {
-  @include fade(in);
-}
-
 .FadeOut {
   @include fade(out);
 }
