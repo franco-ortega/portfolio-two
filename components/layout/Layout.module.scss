@@ -4,6 +4,10 @@
   background-color: var(--color-light);
   min-height: 100vh;
 
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+
   main {
     padding: 2rem;
   }
