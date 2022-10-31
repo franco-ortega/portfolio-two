@@ -1,0 +1,30 @@
+@use '../../styles/scss/' as *;
+
+.Home {
+  background-color: hsla(39, 58%, 57%, 0.5);
+  border-radius: 0.5rem;
+
+  padding: 1rem;
+
+  font-family: var(--font-family-primary);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  margin-bottom: 2.5rem;
+
+  ul {
+    li {
+      list-style-type: disc;
+      margin-inline: 1rem;
+    }
+    li + li {
+      margin-top: 0.5rem;
+    }
+  }
+
+  @include media-query(small) {
+    margin-bottom: 0;
+  }
+}

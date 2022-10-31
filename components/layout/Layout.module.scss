@@ -4,9 +4,23 @@
   background-color: var(--color-light);
   min-height: 100vh;
 
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+
+  main {
+    padding: 2rem;
+  }
+
   @include media-query(small) {
-    display: grid;
+    grid-template-rows: none;
     grid-template-columns: auto 1fr;
+    align-items: stretch;
+
+    main {
+      display: grid;
+      align-items: center;
+    }
   }
 
   @include fade(in);
