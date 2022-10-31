@@ -1,12 +1,6 @@
 import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faSearch,
-  faAmbulance,
-  faAnchor,
-  faMoon,
-  faM
-} from '@fortawesome/free-solid-svg-icons';
+import DarkButton from '../buttons/DarkButton';
+
 import Nav from '../navs/Nav';
 import styles from './Layout.module.scss';
 
@@ -21,9 +15,8 @@ const Layout = ({ children }) => {
       data-testid='layout'
     >
       <Nav />
-      <button onClick={onDarkModeClick}>
-        <FontAwesomeIcon icon={faMoon} />
-      </button>
+      <DarkButton handler={onDarkModeClick} />
+
       <main>{children}</main>
     </div>
   );
