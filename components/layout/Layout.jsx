@@ -7,7 +7,10 @@ import styles from './Layout.module.scss';
 const Layout = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false);
 
-  const onDarkModeClick = () => setDarkMode((prevState) => !prevState);
+  const onDarkModeClick = () => {
+    console.log('dark!!');
+    setDarkMode((prevState) => !prevState);
+  };
 
   return (
     <div
