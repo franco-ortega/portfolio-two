@@ -3,6 +3,7 @@ import styles from './Home.module.scss';
 const Home = () => {
   return (
     <div className={styles.Home} data-testid='home'>
+      <h2>Hello!</h2>
       <p>
         I&apos;m a software engineer who loves to create intuitive interfaces
         and build out features across the stack. I value:
