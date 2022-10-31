@@ -1,3 +1,5 @@
+@use '../../styles/scss/' as *;
+
 .Home {
   background-color: hsla(39, 58%, 57%, 0.5);
   border-radius: 0.5rem;
@@ -20,5 +22,9 @@
     li + li {
       margin-top: 0.5rem;
     }
+  }
+
+  @include media-query(small) {
+    margin-bottom: 0;
   }
 }

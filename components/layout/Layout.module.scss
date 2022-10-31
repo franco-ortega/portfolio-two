@@ -13,8 +13,14 @@
   }
 
   @include media-query(small) {
-    display: grid;
+    grid-template-rows: none;
     grid-template-columns: auto 1fr;
+    align-items: stretch;
+
+    main {
+      display: grid;
+      align-items: center;
+    }
   }
 
   @include fade(in);
