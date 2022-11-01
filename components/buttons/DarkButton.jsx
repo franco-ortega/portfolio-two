@@ -1,13 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import Button from './Button';
-import styles from './DarkButton.module.scss';
 
-const DarkButton = ({ handler }) => {
+const DarkButton = ({ handler, darkMode }) => {
   const customStyles = {
-    backgroundColor: 'transparent',
-    borderColor: 'black',
-    borderRadius: '100vmax'
+    backgroundColor: `${darkMode ? 'white' : 'black'}`,
+    borderWidth: '2rem',
+    border: 'none',
+    borderRadius: '100vmax',
+    padding: '0.5rem .65rem'
   };
 
   return (
@@ -17,7 +18,7 @@ const DarkButton = ({ handler }) => {
       text={
         <FontAwesomeIcon
           icon={faMoon}
-          style={{ fontSize: 25, color: 'black' }}
+          style={{ fontSize: 20, color: `${darkMode ? 'black' : 'white'}` }}
         />
       }
     ></Button>

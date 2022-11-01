@@ -33,7 +33,7 @@
 }
 
 .DarkMode {
-  --color-light: black;
-  --color-dark: yellow;
-  --color-accent: pink;
+  --color-light: hsl(300, 100%, 15%);
+  --color-dark: hsl(195, 53%, 79%);
+  --color-accent: hsl(0, 0%, 20%);
 }
