@@ -11,6 +11,8 @@
   top: 3.25rem;
   right: 0.5rem;
 
+  @extend %dark-mode-transition;
+
   @include media-query(small) {
     top: 0.5rem;
   }

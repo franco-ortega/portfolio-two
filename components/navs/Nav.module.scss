@@ -7,12 +7,16 @@
   line-height: var(--line-height-nav);
   text-align: center;
 
+  @extend %dark-mode-transition;
+
   nav {
     background-color: var(--color-dark);
     min-height: var(--nav-min-height);
 
     display: flex;
     align-items: center;
+
+    @extend %dark-mode-transition;
   }
 
   @include media-query(small) {
