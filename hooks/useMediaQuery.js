@@ -1,16 +1,23 @@
 import { useEffect, useState } from 'react';
 
 export const useMediaQuery = (query) => {
-  const isMatch = window.matchMedia(query);
-  const [matches, setMatches] = useState(isMatch.matches);
+  const [isMatch, setIsMatch] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(0);
 
   useEffect(() => {
-    const handler = (e) => setMatches(e.matches);
+    setIsMatch(window.matchMedia(query).matches);
 
-    isMatch.addEventListener(handler);
+    const resizeObserver = new ResizeObserver(() => {
+      // Set the current width
+      setScreenWidth(window.innerWidth);
+    });
 
-    return () => isMatch.removeEventListener(handler);
-  });
+    // Add a listener to main
+    resizeObserver.observe(document.querySelector('main'));
 
-  return { matches };
+    // Disconnect listener
+    return () => resizeObserver.disconnect();
+  }, [query, screenWidth]);
+
+  return { isMatch };
 };

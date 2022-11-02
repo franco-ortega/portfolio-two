@@ -1,10 +1,13 @@
 import Head from 'next/head';
 import { useLanding } from '../../hooks/useLanding';
+import { useMediaQuery } from '../../hooks/useMediaQuery';
 import Landing from '../landing/Landing';
 import Layout from '../layout/Layout';
 
 const App = ({ children }) => {
   const { landing, fadeOut, onWelcomeClick } = useLanding();
+  const { isMatch } = useMediaQuery('(min-width: 25rem)');
+
   return (
     <div>
       <Head>
@@ -18,7 +21,7 @@ const App = ({ children }) => {
       {landing ? (
         <Landing handler={onWelcomeClick} fadeOut={fadeOut} />
       ) : (
-        <Layout>{children}</Layout>
+        <Layout isMatch={isMatch}>{children}</Layout>
       )}
     </div>
   );

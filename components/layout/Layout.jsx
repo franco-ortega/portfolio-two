@@ -3,7 +3,7 @@ import Nav from '../navs/Nav';
 import DarkButton from '../buttons/DarkButton';
 import styles from './Layout.module.scss';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, isMatch }) => {
   const [darkMode, setDarkMode] = useState(false);
 
   const onDarkModeClick = () => setDarkMode((prevState) => !prevState);
@@ -13,7 +13,11 @@ const Layout = ({ children }) => {
       data-testid='layout'
     >
       <Nav />
-      <DarkButton handler={onDarkModeClick} darkMode={darkMode} />
+      <DarkButton
+        handler={onDarkModeClick}
+        darkMode={darkMode}
+        isMatch={isMatch}
+      />
 
       <main>{children}</main>
     </div>
