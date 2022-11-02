@@ -3,19 +3,7 @@ import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import Button from './Button';
 import styles from './DarkButton.module.scss';
 
-const DarkButton = ({ handler, darkMode, isMatch }) => {
-  console.log({ isMatch });
-  // const customStyles = {
-  //   backgroundColor: darkMode ? 'white' : 'black',
-  //   borderWidth: '2rem',
-  //   border: 'none',
-  //   borderRadius: '100vmax',
-  //   padding: '0.5rem .65rem',
-  //   position: 'absolute',
-  //   top: isMatch ? '0.5rem' : '3.25rem',
-  //   right: '.5rem'
-  // };
-
+const DarkButton = ({ handler, darkMode }) => {
   return (
     <Button
       customStyles={`${styles.DarkButton} ${darkMode && styles.DarkMode}`}

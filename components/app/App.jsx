@@ -6,7 +6,6 @@ import Layout from '../layout/Layout';
 
 const App = ({ children }) => {
   const { landing, fadeOut, onWelcomeClick } = useLanding();
-  const { isMatch } = useMediaQuery('(min-width: 25rem)');
 
   return (
     <div>
@@ -21,7 +20,7 @@ const App = ({ children }) => {
       {landing ? (
         <Landing handler={onWelcomeClick} fadeOut={fadeOut} />
       ) : (
-        <Layout isMatch={isMatch}>{children}</Layout>
+        <Layout>{children}</Layout>
       )}
     </div>
   );
