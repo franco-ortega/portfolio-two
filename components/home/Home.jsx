@@ -6,15 +6,14 @@ const Home = () => {
       <h2>Hello!</h2>
       <p>
         I&apos;m a software engineer who loves to create intuitive interfaces
-        and build out features across the stack. I value:
+        and build features across the stack. I value:
       </p>
       <ul>
         <li>
-          well-documented and efficient processes that offer both structure and
+          well-documented and efficient processes that offer structure and
           flexibility
         </li>
         <li>clear and kind communication</li>
-        <li>cross-functional collaboration</li>
         <li>
           supportive environments that foster diversity and nurture growth
         </li>
