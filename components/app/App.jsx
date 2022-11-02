@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { useLanding } from '../../hooks/useLanding';
-import { useMediaQuery } from '../../hooks/useMediaQuery';
 import Landing from '../landing/Landing';
 import Layout from '../layout/Layout';
 
