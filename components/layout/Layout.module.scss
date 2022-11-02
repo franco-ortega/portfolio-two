@@ -33,9 +33,15 @@
   @extend %dark-mode-transition;
 
   @media (prefers-color-scheme: dark) {
-    --color-light: hsl(0, 0%, 95%);
-    --color-dark: hsl(300, 100%, 15%);
-    --color-accent: hsl(195, 53%, 79%);
-    --color-medium: hsla(39, 58%, 57%, 0.5);
+    --bg-color: var(--color-light-white);
+    --bg-color-button: var(--color-dark-purple);
+    --bg-color-nav: var(--color-dark-purple);
+    --bg-color-page: var(--color-light-gray);
+
+    --text-color-button: var(--color-light-white);
+    --text-color-hello: var(--color-light-white);
+    --text-color-landing: var(--color-dark-purple);
+    --text-color-nav: var(--color-light-blue);
+    --text-color-page: var(--color-dark-black);
   }
 }
