@@ -36,7 +36,6 @@
   --bg-color-button: var(--color-light-white);
 
   // --bg-color-nav: var(--color-dark-purple);
-  --bg-color-nav: var(--color-dark-purple); // unchanged
   --bg-color-nav: var(--color-darker-purple);
 
   // --bg-color-page: var(--color-light-gray);
@@ -56,9 +55,7 @@
   --text-color-nav: var(--color-light-blue); // unchanged
 
   // --text-color-page: var(--color-dark-black);
-  // --text-color-page: var(--color-light-blue);
-  --text-color-page: var(--color-light-white);
-  --text-color-page: var(--color-light-gray);
+  --text-color-page: var(--color-medium-white);
 
   @extend %dark-mode-transition;
 

@@ -7,6 +7,7 @@
 
 :root {
   --color-light-white: hsl(0, 0%, 95%);
+  --color-medium-white: hsl(0, 0%, 85%);
   --color-light-blue: hsl(195, 53%, 79%);
   --color-light-gray: hsla(0, 0%, 80%);
   --color-dark-gray: hsla(0, 0%, 20%);
