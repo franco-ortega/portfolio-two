@@ -5,6 +5,7 @@ import styles from './Layout.module.scss';
 
 const Layout = ({ children }) => {
   const { darkMode, onDarkModeClick } = useDarkMode();
+  console.log(darkMode);
 
   return (
     <div

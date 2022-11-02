@@ -31,4 +31,11 @@
   --color-dark: hsl(195, 53%, 79%);
   --color-accent: hsl(0, 0%, 20%);
   --color-medium: var(--color-dark);
+
+  @media (prefers-color-scheme: dark) {
+    --color-light: hsl(0, 0%, 95%);
+    --color-dark: hsl(300, 100%, 15%);
+    --color-accent: hsl(195, 53%, 79%);
+    --color-medium: hsla(39, 58%, 57%, 0.5);
+  }
 }
