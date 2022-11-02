@@ -9,6 +9,7 @@
   --color-light: hsl(0, 0%, 95%);
   --color-dark: hsl(300, 100%, 15%);
   --color-accent: hsl(195, 53%, 79%);
+  --color-medium: hsla(39, 58%, 57%, 0.5);
   --font-size-medium: 1rem;
   --font-size-nav: 1.25rem;
   --font-size-large: 2.25rem;
