@@ -14,7 +14,10 @@ export const useLanding = () => {
     );
 
     // only display Landing on home page
-    if (router.pathname !== '/') setLanding(false);
+    if (router.pathname !== '/') {
+      setLanding(false);
+      setFadeOut(false);
+    }
   }, [router]);
 
   const onWelcomeClick = () => {
