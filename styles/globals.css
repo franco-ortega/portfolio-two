@@ -1,3 +1,5 @@
+@use '../styles/scss/' as *;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,10 +8,26 @@
 }
 
 :root {
-  --color-light: hsl(0, 0%, 95%);
-  --color-dark: hsl(300, 100%, 15%);
-  --color-accent: hsl(195, 53%, 79%);
-  --color-medium: hsla(39, 58%, 57%, 0.5);
+  --color-light-white: hsl(0, 0%, 95%);
+  --color-medium-white: hsl(0, 0%, 85%);
+  --color-light-blue: hsl(195, 53%, 79%);
+  --color-light-gray: hsla(0, 0%, 80%);
+  --color-dark-gray: hsla(0, 0%, 20%);
+  --color-dark-purple: hsl(300, 100%, 15%);
+  --color-darker-purple: hsl(300, 100%, 10%);
+  --color-dark-black: hsl(0, 0%, 10%);
+
+  --bg-color: var(--color-light-white);
+  --bg-color-button: var(--color-dark-purple);
+  --bg-color-nav: var(--color-dark-purple);
+  --bg-color-page: var(--color-light-gray);
+
+  --text-color-button: var(--color-light-white);
+  --text-color-hello: var(--color-light-white);
+  --text-color-landing: var(--color-dark-purple);
+  --text-color-nav: var(--color-light-blue);
+  --text-color-page: var(--color-dark-black);
+
   --font-size-medium: 1rem;
   --font-size-nav: 1.25rem;
   --font-size-large: 2.25rem;
@@ -65,9 +83,22 @@ a {
   } */
 
   body {
-    --color-light: hsl(300, 100%, 15%);
-    --color-dark: hsl(195, 53%, 79%);
-    --color-accent: hsl(0, 0%, 20%);
-    --color-medium: var(--color-dark);
+    --bg-color: var(--color-dark-black);
+    --bg-color-button: var(--color-light-white);
+    --bg-color-nav: var(--color-darker-purple);
+    --bg-color-page: var(--color-dark-gray);
+
+    --text-color-button: var(--color-dark-purple);
+
+    /* unchanged */
+    --text-color-hello: var(--color-light-white);
+
+    /* unchanged */
+    --text-color-landing: var(--color-dark-purple);
+
+    /* unchanged */
+    --text-color-nav: var(--color-light-blue);
+
+    --text-color-page: var(--color-medium-white);
   }
 }
