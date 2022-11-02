@@ -1,7 +1,8 @@
 @use '../../styles/scss/' as *;
 
 .DarkButton {
-  background-color: black;
+  background-color: var(--color-dark);
+  color: var(--color-light);
   border-width: 2rem;
   border: none;
   border-radius: 100vmax;
@@ -13,8 +14,4 @@
   @include media-query(small) {
     top: 0.5rem;
   }
-}
-
-.DarkMode {
-  background-color: white;
 }

@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
       data-testid='layout'
     >
       <Nav />
-      <DarkButton handler={onDarkModeClick} darkMode={darkMode} />
+      <DarkButton handler={onDarkModeClick} />
 
       <main>{children}</main>
     </div>

@@ -3,17 +3,12 @@ import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import Button from './Button';
 import styles from './DarkButton.module.scss';
 
-const DarkButton = ({ handler, darkMode }) => {
+const DarkButton = ({ handler }) => {
   return (
     <Button
-      customStyles={`${styles.DarkButton} ${darkMode && styles.DarkMode}`}
+      customStyles={styles.DarkButton}
       handler={handler}
-      text={
-        <FontAwesomeIcon
-          icon={faMoon}
-          style={{ fontSize: 20, color: `${darkMode ? 'black' : 'white'}` }}
-        />
-      }
+      text={<FontAwesomeIcon icon={faMoon} style={{ fontSize: 20 }} />}
     ></Button>
   );
 };
