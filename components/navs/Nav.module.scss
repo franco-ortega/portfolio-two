@@ -1,7 +1,7 @@
 @use '../../styles/scss/' as *;
 
 .Nav {
-  color: var(--color-accent);
+  color: var(--text-color-nav);
   font-family: var(--font-family-primary);
   font-size: var(--font-size-nav);
   line-height: var(--line-height-nav);
@@ -10,7 +10,7 @@
   @extend %dark-mode-transition;
 
   nav {
-    background-color: var(--color-dark);
+    background-color: var(--bg-color-nav);
     min-height: var(--nav-min-height);
 
     display: flex;
@@ -20,7 +20,7 @@
   }
 
   @include media-query(small) {
-    background-color: var(--color-dark);
+    background-color: var(--bg-color-nav);
     padding-block: 1rem;
     padding-inline: 0.75rem;
 

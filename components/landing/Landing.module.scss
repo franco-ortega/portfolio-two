@@ -1,7 +1,7 @@
 @use '../../styles/scss/' as *;
 
 .Landing {
-  background-color: var(--color-light);
+  background-color: var(--bg-color);
   min-height: 100vh;
 
   display: flex;
@@ -20,7 +20,7 @@
 
     h1,
     h2 {
-      color: var(--color-dark);
+      color: var(--text-color-landing);
       font-family: var(--font-family-cursive);
     }
 
