@@ -2,10 +2,10 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
 export const useLanding = () => {
-  const [landing, setLanding] = useState(false);
+  const router = useRouter();
+  const [landing, setLanding] = useState(router.pathname === '/');
   const [fadeOut, setFadeOut] = useState(false);
   const [noPreference, setNoPreference] = useState(false);
-  const router = useRouter();
 
   useEffect(() => {
     // checks preference to determine when Landing is removed in setTimeOut below
@@ -14,7 +14,10 @@ export const useLanding = () => {
     );
 
     // only display Landing on home page
-    if (router.pathname === '/') setLanding(true);
+    if (router.pathname !== '/') {
+      setLanding(false);
+      setFadeOut(false);
+    }
   }, [router]);
 
   const onWelcomeClick = () => {
