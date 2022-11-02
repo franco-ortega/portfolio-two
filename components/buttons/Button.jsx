@@ -1,8 +1,8 @@
 import styles from './Button.module.scss';
 
-const Button = ({ handler, customStyles, text }) => {
+const Button = ({ customStyles, handler, text }) => {
   return (
-    <button className={styles.Button} style={customStyles} onClick={handler}>
+    <button className={`${styles.Button} ${customStyles}`} onClick={handler}>
       {text}
     </button>
   );
