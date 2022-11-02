@@ -1,0 +1,32 @@
+%dark-mode-colors {
+  // --bg-color: var(--color-light-white);
+  --bg-color: var(--color-dark-black);
+
+  // --bg-color-button: var(--color-dark-purple);
+  --bg-color-button: var(--color-light-white);
+
+  // --bg-color-nav: var(--color-dark-purple);
+  --bg-color-nav: var(--color-darker-purple);
+
+  // --bg-color-page: var(--color-light-gray);
+  --bg-color-page: var(--color-dark-gray);
+
+  // --text-color-button: var(--color-light-white);
+  --text-color-button: var(--color-dark-purple);
+
+  // --text-color-hello: var(--color-light-white);
+  --text-color-hello: var(--color-light-white); // unchanged
+
+  // --text-color-landing: var(--color-dark-purple);
+  --text-color-landing: var(--color-dark-purple); // unchanged
+
+  // --text-color-nav: var(--color-light-blue);
+  --text-color-nav: var(--color-light-blue); // unchanged
+
+  // --text-color-page: var(--color-dark-black);
+  --text-color-page: var(--color-medium-white);
+}
+
+%dark-mode-transition {
+  transition: background-color 500ms ease, color 500ms ease;
+}
