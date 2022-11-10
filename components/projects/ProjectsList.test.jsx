@@ -4,7 +4,7 @@ import testContent from '../../data/testContent.json';
 
 describe('ProjectsList component tests', () => {
   it('renders the ProjectsList component', () => {
-    render(<ProjectsList {...testContent[0]} />);
+    render(<ProjectsList projects={testContent} />);
 
     const element = screen.getByTestId('projects-list');
 
