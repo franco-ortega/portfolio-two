@@ -1,5 +1,5 @@
-import Projects from '../components/projects/Projects';
-import { getProjects } from '../services/projects';
+import Projects from '../../components/projects/Projects';
+import { getProjects } from '../../services/projects';
 
 export default function ProjectsPage({ data }) {
   return <Projects data={data} />;
