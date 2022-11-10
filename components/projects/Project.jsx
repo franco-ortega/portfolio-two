@@ -8,16 +8,7 @@ const Project = ({ title, techList, description, challenges, learnings }) => {
         ))}
       </ul>
       <p>{description}</p>
-      <ul>
-        {challenges.map((challenge, i) => (
-          <li key={i}>{challenge}</li>
-        ))}
-      </ul>
-      <ul>
-        {learnings.map((learning, i) => (
-          <li key={i}>{learning}</li>
-        ))}
-      </ul>
+      <button>Click for more project details.</button>
     </div>
   );
 };
