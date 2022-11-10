@@ -1,11 +1,10 @@
-import testContent from '../../data/testContent.json';
 import ProjectsList from './ProjectsList';
 
-const Projects = () => {
+const Projects = ({ data }) => {
   return (
     <div data-testid='projects'>
       <h2>Projects Page</h2>
-      <ProjectsList projects={testContent} />
+      <ProjectsList projects={data} />
     </div>
   );
 };
