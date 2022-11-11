@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 
-const Project = ({ title, techList, description, challenges, learnings }) => {
+const Project = ({ title, techList, description }) => {
   const router = useRouter();
 
   const onDetailsClick = () => {
