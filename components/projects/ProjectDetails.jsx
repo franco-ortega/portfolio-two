@@ -1,26 +1,20 @@
-const ProjectDetails = ({
-  title,
-  techList,
-  description,
-  challenges,
-  learnings
-}) => {
+const ProjectDetails = ({ data }) => {
   return (
     <div data-testid='project-details'>
-      <h2>{title}</h2>
+      <h2>{data.title}</h2>
       <ul>
-        {techList.map((tech, i) => (
+        {data.techList.map((tech, i) => (
           <li key={i}>{tech}</li>
         ))}
       </ul>
-      <p>{description}</p>
+      <p>{data.description}</p>
       <ul>
-        {challenges.map((challenge, i) => (
+        {data.challenges.map((challenge, i) => (
           <li key={i}>{challenge}</li>
         ))}
       </ul>
       <ul>
-        {learnings.map((learning, i) => (
+        {data.learnings.map((learning, i) => (
           <li key={i}>{learning}</li>
         ))}
       </ul>

@@ -1,4 +1,5 @@
 import ProjectDetails from '../../components/projects/ProjectDetails';
+import { getProjectsByTitle } from '../../services/projects';
 
 export default function ProjectDetailsPage({ data }) {
   return <ProjectDetails data={data} />;
@@ -6,10 +7,7 @@ export default function ProjectDetailsPage({ data }) {
 
 export async function getServerSideProps(context) {
   try {
-    const response = await getProjects();
-    const [data] = response.filter(
-      (project) => project.title.toLowerCase() === context.params.project
-    );
+    const data = await getProjectsByTitle(context.params.project);
 
     return {
       props: { isConnected: true, data }
