@@ -1,11 +1,11 @@
 import ProjectsList from './ProjectsList';
+import testContent from '../../data/testContent.json';
 
-const Projects = ({ data }) => {
-  console.log('PROJECTS DATA: ', data);
+const Projects = () => {
   return (
     <div data-testid='projects'>
       <h2>Projects Page</h2>
-      <ProjectsList projects={data} />
+      <ProjectsList projects={testContent} />
     </div>
   );
 };
