@@ -1,18 +1,7 @@
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import testContent from '../../data/testContent.json';
+import { useProject } from '../../hooks/useProject';
 
 const ProjectDetails = () => {
-  const router = useRouter();
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    setData(
-      ...testContent.filter(
-        (item) => item.title.toLowerCase() === router.query.project
-      )
-    );
-  }, [data, router.query.project]);
+  const { data } = useProject();
 
   return (
     <div data-testid='project-details'>
