@@ -8,6 +8,7 @@
   grid-template-rows: auto 1fr;
   align-items: center;
 
+  color: var(--text-color-page);
   @extend %dark-mode-transition;
 
   main {
