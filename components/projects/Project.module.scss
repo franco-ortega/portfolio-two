@@ -5,9 +5,8 @@
   border: 0.1rem solid var(--bg-color-nav);
   // max-width: 30rem;
   padding: 0.25rem;
-  & > * {
-    // outline: 1px dashed red;
-  }
+
+  margin-inline: auto;
 
   display: flex;
   flex-direction: column;
@@ -49,10 +48,15 @@
   }
 
   @include media-query(small) {
-    max-width: 25rem;
+    // max-width: 25rem;
+    max-width: max(35rem, 80%);
+
+    ul {
+      max-width: 100%;
+    }
   }
 
   @include media-query(medium) {
-    max-width: 20rem;
+    // max-width: max(20rem, 40%);
   }
 }
