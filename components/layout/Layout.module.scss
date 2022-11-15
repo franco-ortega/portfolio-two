@@ -9,6 +9,7 @@
   align-items: center;
 
   color: var(--text-color-page);
+  font-family: var(--font-family-primary);
   @extend %dark-mode-transition;
 
   main {

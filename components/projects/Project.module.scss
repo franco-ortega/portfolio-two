@@ -1,0 +1,23 @@
+.Project {
+  background-color: var(--bg-color-page);
+  border: 0.1rem solid var(--bg-color-nav);
+  // max-width: 30rem;
+  padding: 0.25rem;
+  & > * {
+    outline: 1px dashed red;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  ul {
+    display: flex;
+    gap: 1rem;
+  }
+}
