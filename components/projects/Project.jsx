@@ -8,6 +8,9 @@ const Project = ({ title, techList, description }) => {
     router.push(`/projects/${title.toLowerCase()}`);
   };
 
+  const openCurly = '{';
+  const closeCurly = '}';
+
   return (
     <div data-testid='project' className={styles.Project}>
       <h3>{title}</h3>
