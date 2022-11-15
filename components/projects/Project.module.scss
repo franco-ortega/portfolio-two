@@ -4,7 +4,7 @@
   // max-width: 30rem;
   padding: 0.25rem;
   & > * {
-    outline: 1px dashed red;
+    // outline: 1px dashed red;
   }
 
   display: flex;
@@ -18,6 +18,18 @@
 
   ul {
     display: flex;
-    gap: 1rem;
+    gap: 0.25rem;
+  }
+
+  ul::before {
+    content: '{';
+  }
+
+  li + li::before {
+    content: '- ';
+  }
+
+  ul::after {
+    content: '}';
   }
 }
