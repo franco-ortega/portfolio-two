@@ -51,4 +51,8 @@
   @include media-query(small) {
     max-width: 25rem;
   }
+
+  @include media-query(medium) {
+    max-width: 20rem;
+  }
 }
