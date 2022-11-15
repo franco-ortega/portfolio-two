@@ -1,3 +1,5 @@
+@use '../../styles/scss/' as *;
+
 .Project {
   background-color: var(--bg-color-page);
   border: 0.1rem solid var(--bg-color-nav);
@@ -44,5 +46,9 @@
 
   li + li {
     padding-left: 0.5rem;
+  }
+
+  @include media-query(small) {
+    max-width: 25rem;
   }
 }
