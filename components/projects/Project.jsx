@@ -14,6 +14,7 @@ const Project = ({ title, techList, description }) => {
           <li key={i}>{tech}</li>
         ))}
       </ul>
+      <p>GitHub - Website</p>
       <p>{description}</p>
       <button onClick={onDetailsClick}>Click for more details.</button>
     </li>
