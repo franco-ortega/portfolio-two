@@ -1,23 +1,27 @@
 import { useRouter } from 'next/router';
+import GitHubLink from '../links/GitHubLink';
+import WebsiteLink from '../links/WebsiteLink';
+import styles from './Project.module.scss';
 
-const Project = ({ title, techList, description }) => {
+const Project = ({ title, techList, github, website, description }) => {
   const router = useRouter();
 
-  const onDetailsClick = () => {
-    router.push(`/projects/${title.toLowerCase()}`);
-  };
+  const onDetailsClick = () => router.push(`/projects/${title.toLowerCase()}`);
 
   return (
-    <div data-testid='project'>
-      <h2>{title}</h2>
+    <li data-testid='project' className={styles.Project}>
+      <h3>{title}</h3>
       <ul>
         {techList.map((tech, i) => (
           <li key={i}>{tech}</li>
         ))}
       </ul>
+      <p>
+        <GitHubLink url={github} /> - <WebsiteLink url={website} />
+      </p>
       <p>{description}</p>
-      <button onClick={onDetailsClick}>Click for more project details.</button>
-    </div>
+      <button onClick={onDetailsClick}>Project Details</button>
+    </li>
   );
 };
 
