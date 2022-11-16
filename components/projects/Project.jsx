@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
-import ExternalLink from '../links/ExternalLink';
 import GitHubLink from '../links/GitHubLink';
+import WebsiteLink from '../links/WebsiteLink';
 import styles from './Project.module.scss';
 
 const Project = ({ title, techList, github, website, description }) => {
@@ -17,8 +17,7 @@ const Project = ({ title, techList, github, website, description }) => {
         ))}
       </ul>
       <p>
-        <GitHubLink url={github} /> -{' '}
-        <ExternalLink title={'Website'} url={website} />
+        <GitHubLink url={github} /> - <WebsiteLink url={website} />
       </p>
       <p>{description}</p>
       <button onClick={onDetailsClick}>Project Details</button>
