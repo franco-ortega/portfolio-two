@@ -1,7 +1,8 @@
 import { useRouter } from 'next/router';
+import ExternalLink from '../links/ExternalLink';
 import styles from './Project.module.scss';
 
-const Project = ({ title, techList, description }) => {
+const Project = ({ title, techList, github, website, description }) => {
   const router = useRouter();
 
   const onDetailsClick = () => router.push(`/projects/${title.toLowerCase()}`);
@@ -14,9 +15,12 @@ const Project = ({ title, techList, description }) => {
           <li key={i}>{tech}</li>
         ))}
       </ul>
-      <p>GitHub - Website</p>
+      <p>
+        <ExternalLink title={'GitHub'} url={github} /> -{' '}
+        <ExternalLink title={'Website'} url={website} />
+      </p>
       <p>{description}</p>
-      <button onClick={onDetailsClick}>Click for more details.</button>
+      <button onClick={onDetailsClick}>Project Details</button>
     </li>
   );
 };
