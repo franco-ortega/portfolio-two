@@ -4,9 +4,7 @@ import styles from './Project.module.scss';
 const Project = ({ title, techList, description }) => {
   const router = useRouter();
 
-  const onDetailsClick = () => {
-    router.push(`/projects/${title.toLowerCase()}`);
-  };
+  const onDetailsClick = () => router.push(`/projects/${title.toLowerCase()}`);
 
   return (
     <li data-testid='project' className={styles.Project}>
