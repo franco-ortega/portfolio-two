@@ -39,6 +39,7 @@
     "id": 3,
     "title": "Title333",
     "techList": ["TechOne", "TechTwo", "TechThree"],
+    "demo": "https://github.com/franco-ortega/portfolio",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates architecto commodi harum accusantium voluptatibus debitis dolor minus quasi molestiae maxime, cum autem id excepturi adipisci.",
     "challenges": [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, in.",
