@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import ExternalLink from './ExternalLink';
 
-describe('External Link component tests', () => {
+describe('ExternalLink component tests', () => {
   it('renders an external link', () => {
     const content = 'GitHub';
     const url = 'https://github.com/franco-ortega';
