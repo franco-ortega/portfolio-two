@@ -12,7 +12,7 @@ const Project = ({ title, techList, description }) => {
   const closeCurly = '}';
 
   return (
-    <div data-testid='project' className={styles.Project}>
+    <li data-testid='project' className={styles.Project}>
       <h3>{title}</h3>
       <ul>
         {techList.map((tech, i) => (
@@ -21,7 +21,7 @@ const Project = ({ title, techList, description }) => {
       </ul>
       <p>{description}</p>
       <button onClick={onDetailsClick}>Click for more details.</button>
-    </div>
+    </li>
   );
 };
 

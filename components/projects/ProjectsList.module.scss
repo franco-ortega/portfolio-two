@@ -2,7 +2,7 @@
 
 .ProjectsList {
   margin-inline: auto;
-  display: flex;
+  // display: flex;
   flex-direction: column;
   gap: 1rem;
 
@@ -13,7 +13,7 @@
     margin-inline: auto;
     // flex-direction: row;
     // flex-wrap: wrap;
-    display: grid;
+    // display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 1rem;
   }
