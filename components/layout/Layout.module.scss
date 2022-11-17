@@ -1,19 +1,25 @@
 @use '../../styles/scss/' as *;
 
 .Layout {
+  @extend %dark-mode-transition;
+  @include fade(in);
+
   background-color: var(--bg-color);
   min-height: 100vh;
 
   display: grid;
-  grid-template-rows: auto 1fr;
-  align-items: center;
+  grid-template-rows: var(--nav-min-height) 1fr var(--nav-min-height);
 
   color: var(--text-color-page);
   font-family: var(--font-family-primary);
-  @extend %dark-mode-transition;
 
   main {
-    padding: 2rem;
+    padding-inline: 2rem;
+
+    &:has([data-testid='home']) {
+      display: grid;
+      align-items: center;
+    }
   }
 
   @include media-query(small) {
@@ -22,13 +28,9 @@
     align-items: stretch;
 
     main {
-      display: grid;
-      align-items: center;
-      // width: fit-content;
+      padding-block: 1rem;
     }
   }
-
-  @include fade(in);
 }
 
 .DarkMode {
