@@ -1,6 +1,8 @@
 @use '../../styles/scss/' as *;
 
 .PortfolioNav {
+  width: 100%;
+
   ul {
     width: 100%;
     display: grid;
