@@ -27,3 +27,11 @@
     }
   }
 }
+
+@mixin hover-transform {
+  transition: transform 750ms ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
