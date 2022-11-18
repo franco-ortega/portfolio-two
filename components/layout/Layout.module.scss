@@ -5,7 +5,7 @@
   @include fade(in);
 
   background-color: var(--bg-color);
-  min-height: 100vh;
+  height: 100vh;
 
   display: grid;
   grid-template-rows: var(--nav-min-height) 1fr var(--nav-min-height);
