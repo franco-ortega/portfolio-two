@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import ProjectButton from '../buttons/ProjectButton';
 import GitHubLink from '../links/GitHubLink';
 import WebsiteLink from '../links/WebsiteLink';
 import styles from './Project.module.scss';
@@ -22,7 +23,7 @@ const Project = ({ title, techList, github, website, description }) => {
         </p>
         <p>{description}</p>
       </div>
-      <button onClick={onDetailsClick}>Project Details</button>
+      <ProjectButton handler={onDetailsClick} />
     </li>
   );
 };
