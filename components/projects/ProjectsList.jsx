@@ -3,11 +3,13 @@ import styles from './ProjectsList.module.scss';
 
 const ProjectsList = ({ projects }) => {
   return (
-    <ul data-testid='projects-list' className={styles.ProjectsList}>
-      {projects.map((project) => (
-        <Project key={project.id} {...project} />
-      ))}
-    </ul>
+    <div data-testid='projects-list' className={styles.ProjectsList}>
+      <ul>
+        {projects.map((project) => (
+          <Project key={project.id} {...project} />
+        ))}
+      </ul>
+    </div>
   );
 };
 

@@ -14,7 +14,7 @@
   font-family: var(--font-family-primary);
 
   main {
-    padding-inline: 2rem;
+    padding-inline: 1.5rem;
 
     &:has([data-testid='home']) {
       display: grid;
