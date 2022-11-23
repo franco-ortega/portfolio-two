@@ -9,6 +9,8 @@
 
   @extend %dark-mode-transition;
 
+  min-height: 100%;
+
   nav {
     background-color: var(--bg-color-nav);
     min-height: var(--nav-min-height);
