@@ -1,7 +1,25 @@
+@use '../../styles/scss/' as *;
+
 .Projects {
   h2 {
     margin-block: 0.5rem;
     font-size: var(--font-size-header);
     text-align: center;
+  }
+
+  @include media-query(small) {
+    // background-color: pink;
+  }
+
+  @include media-query(medium) {
+    // background-color: lightblue;
+  }
+
+  @include media-query(large) {
+    // background-color: lightgreen;
+  }
+
+  @include media-query(x-large) {
+    // background-color: lightseagreen;
   }
 }
