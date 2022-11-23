@@ -10,16 +10,18 @@ const Project = ({ title, techList, github, website, description }) => {
 
   return (
     <li data-testid='project' className={styles.Project}>
-      <h3>{title}</h3>
-      <ul>
-        {techList.map((tech, i) => (
-          <li key={i}>{tech}</li>
-        ))}
-      </ul>
-      <p>
-        <GitHubLink url={github} /> - <WebsiteLink url={website} />
-      </p>
-      <p>{description}</p>
+      <div>
+        <h3>{title}</h3>
+        <ul>
+          {techList.map((tech, i) => (
+            <li key={i}>{tech}</li>
+          ))}
+        </ul>
+        <p>
+          <GitHubLink url={github} /> - <WebsiteLink url={website} />
+        </p>
+        <p>{description}</p>
+      </div>
       <button onClick={onDetailsClick}>Project Details</button>
     </li>
   );
