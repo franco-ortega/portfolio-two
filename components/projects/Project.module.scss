@@ -3,7 +3,10 @@
 .Project {
   background-color: var(--bg-color-page);
   border: 0.1rem solid var(--bg-color-nav);
-  // max-width: 30rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem var(--text-color-page);
+
+  max-width: 30rem;
   padding: 0.25rem;
 
   margin-inline: auto;
