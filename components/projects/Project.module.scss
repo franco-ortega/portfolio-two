@@ -21,7 +21,6 @@
   }
 
   ul {
-    // max-width: 75%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -51,15 +50,8 @@
   }
 
   @include media-query(small) {
-    // max-width: 25rem;
-    // max-width: max(35rem, 80%);
-
-    ul {
-      // max-width: 100%;
-    }
   }
 
   @include media-query(medium) {
-    // max-width: max(20rem, 40%);
   }
 }
