@@ -14,8 +14,6 @@
 
   @include media-query(small) {
     min-height: calc(100vh - 5rem);
-
-    background-color: gray;
   }
 
   @include media-query(medium) {

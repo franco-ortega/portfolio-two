@@ -8,18 +8,18 @@
   }
 
   @include media-query(small) {
-    background-color: pink;
+    // background-color: pink;
   }
 
   @include media-query(medium) {
-    background-color: lightblue;
+    // background-color: lightblue;
   }
 
   @include media-query(large) {
-    background-color: lightgreen;
+    // background-color: lightgreen;
   }
 
   @include media-query(x-large) {
-    background-color: lightseagreen;
+    // background-color: lightseagreen;
   }
 }
