@@ -4,25 +4,25 @@ import ProjectButton from './ProjectButton';
 describe('ProjectButton component tests', () => {
   it('renders button for dark mode', () => {
     const content = 'Project Details';
-    const handler = jest.fn();
+    // const handler = jest.fn();
 
-    render(<ProjectButton handler={handler} text={content} />);
+    render(<ProjectButton title={content} />);
 
     const button = screen.getByRole('button');
 
     expect(button).toBeInTheDocument();
   });
 
-  it('clicks button for dark mode', () => {
-    const content = 'Project Details';
-    const handler = jest.fn();
+  // it('clicks button for dark mode', () => {
+  //   const content = 'Project Details';
+  //   // const handler = jest.fn();
 
-    render(<ProjectButton handler={handler} text={content} />);
+  //   render(<ProjectButton title={content} />);
 
-    const button = screen.getByRole('button');
+  //   const button = screen.getByRole('button');
 
-    fireEvent.click(button);
+  //   fireEvent.click(button);
 
-    expect(handler).toHaveBeenCalled();
-  });
+  //   expect(handler).toHaveBeenCalled();
+  // });
 });

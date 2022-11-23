@@ -1,14 +1,9 @@
-import { useRouter } from 'next/router';
 import ProjectButton from '../buttons/ProjectButton';
 import GitHubLink from '../links/GitHubLink';
 import WebsiteLink from '../links/WebsiteLink';
 import styles from './Project.module.scss';
 
 const Project = ({ title, techList, github, website, description }) => {
-  const router = useRouter();
-
-  const onDetailsClick = () => router.push(`/projects/${title.toLowerCase()}`);
-
   return (
     <li data-testid='project' className={styles.Project}>
       <div>
@@ -23,7 +18,7 @@ const Project = ({ title, techList, github, website, description }) => {
         </p>
         <p>{description}</p>
       </div>
-      <ProjectButton handler={onDetailsClick} />
+      <ProjectButton title={title} />
     </li>
   );
 };
