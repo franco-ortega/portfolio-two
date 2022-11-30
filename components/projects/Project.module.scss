@@ -27,13 +27,15 @@
     }
 
     ul {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      // color: var(--bg-color-nav);
+      color: var(--tech-text-color);
     }
 
     li::before,
     li::after {
-      color: var(--bg-color);
+      color: var(--tech-decoration-color);
     }
 
     li:first-child::before {
