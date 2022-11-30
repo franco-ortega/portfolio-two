@@ -18,9 +18,6 @@
 
     display: grid;
     align-items: center;
-
-    // &:has([data-testid='home']) {
-    // }
   }
 
   @include media-query(small) {
