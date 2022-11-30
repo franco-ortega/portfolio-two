@@ -20,6 +20,9 @@
   --bg-color-nav: var(--color-dark-purple);
   --bg-color-page: var(--color-light-gray);
 
+  --tech-decoration-color: var(--color-dark-gray);
+  --tech-text-color: var(--color-dark-purple);
+
   --text-color-button: var(--color-light-white);
   --text-color-hello: var(--color-light-white);
   --text-color-landing: var(--color-dark-purple);
@@ -100,5 +103,8 @@ a {
     --text-color-nav: var(--color-light-blue);
 
     --text-color-page: var(--color-medium-white);
+
+    --tech-decoration-color: var(--color-light-gray);
+    --tech-text-color: var(--color-light-blue);
   }
 }
