@@ -35,13 +35,17 @@
   @extend %dark-mode-colors;
   @extend %dark-mode-transition;
 
+  // for users with dark theme on the operating system, clicking on the dark button
+  // will switch the colors to light theme
   @media (prefers-color-scheme: dark) {
     --bg-color: var(--color-light-white);
     --bg-color-button: var(--color-dark-purple);
+    --bg-color-dark-button: var(--color-dark-purple);
     --bg-color-nav: var(--color-dark-purple);
     --bg-color-page: var(--color-light-gray);
 
     --text-color-button: var(--color-light-white);
+    --text-color-dark-button: var(--color-light-white);
     --text-color-hello: var(--color-light-white);
     --text-color-landing: var(--color-dark-purple);
     --text-color-nav: var(--color-light-blue);

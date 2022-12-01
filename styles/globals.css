@@ -17,6 +17,7 @@
 
   --bg-color: var(--color-light-white);
   --bg-color-button: var(--color-dark-purple);
+  --bg-color-dark-button: var(--color-dark-purple);
   --bg-color-nav: var(--color-dark-purple);
   --bg-color-page: var(--color-light-gray);
 
@@ -24,6 +25,7 @@
   --tech-text-color: var(--color-dark-purple);
 
   --text-color-button: var(--color-light-white);
+  --text-color-dark-button: var(--color-light-white);
   --text-color-hello: var(--color-light-white);
   --text-color-landing: var(--color-dark-purple);
   --text-color-nav: var(--color-light-blue);
@@ -87,11 +89,16 @@ a {
 
   body {
     --bg-color: var(--color-dark-black);
-    --bg-color-button: var(--color-light-white);
+    /* --bg-color-button: var(--color-light-white); */
+    --bg-color-button: var(--color-dark-black);
+    --bg-color-dark-button: var(--color-light-white);
+
     --bg-color-nav: var(--color-darker-purple);
     --bg-color-page: var(--color-dark-gray);
 
-    --text-color-button: var(--color-dark-purple);
+    /* --text-color-button: var(--color-dark-purple); */
+    --text-color-button: var(--color-light-gray);
+    --text-color-dark-button: var(--color-dark-purple);
 
     /* unchanged */
     --text-color-hello: var(--color-light-white);
