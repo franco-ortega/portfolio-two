@@ -38,10 +38,12 @@
   @media (prefers-color-scheme: dark) {
     --bg-color: var(--color-light-white);
     --bg-color-button: var(--color-dark-purple);
+    --bg-color-dark-button: var(--color-dark-purple);
     --bg-color-nav: var(--color-dark-purple);
     --bg-color-page: var(--color-light-gray);
 
     --text-color-button: var(--color-light-white);
+    --text-color-dark-button: var(--color-light-white);
     --text-color-hello: var(--color-light-white);
     --text-color-landing: var(--color-dark-purple);
     --text-color-nav: var(--color-light-blue);
