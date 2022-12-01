@@ -1,12 +1,12 @@
 import { render, screen } from '@testing-library/react';
-import TechsList from './TechsList';
+import TechList from './TechList';
 import testContent from '../../data/testContent.json';
 
-describe('TechsList component tests', () => {
-  it('renders the TechsList component', () => {
-    render(<TechsList tech={testContent[0].tech} />);
+describe('TechList component tests', () => {
+  it('renders the TechList component', () => {
+    render(<TechList tech={testContent[0].tech} />);
 
-    const element = screen.getByTestId('projects-list');
+    const element = screen.getByTestId('tech-list');
 
     expect(element).toBeInTheDocument();
   });
