@@ -9,7 +9,6 @@ const Project = ({ title, tech, github, website, description }) => {
     <li data-testid='project' className={styles.Project}>
       <div>
         <h3>{title}</h3>
-
         <TechList tech={tech} />
         <p>
           <GitHubLink url={github} /> - <WebsiteLink url={website} />
