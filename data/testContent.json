@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Portfolio Two",
-    "techList": ["Tech1", "Tech2", "Tech3"],
+    "tech": ["Tech1", "Tech2", "Tech3"],
     "github": "https://github.com/franco-ortega/portfolio-two",
     "website": "https://franco-ortega.vercel.app/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates architecto commodi harum accusantium voluptatibus debitis dolor minus quasi molestiae maxime, cum autem id excepturi adipisci.",
@@ -20,7 +20,7 @@
   {
     "id": 2,
     "title": "Portfolio",
-    "techList": ["Tech1", "Tech2", "Tech3", "Tech4", "Tech5"],
+    "tech": ["Tech1", "Tech2", "Tech3", "Tech4", "Tech5"],
     "github": "https://github.com/franco-ortega/portfolio",
     "website": "https://francoortega.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates architecto commodi harum accusantium voluptatibus harum accusantium voluptatibus harum accusantium voluptatibus harum accusantium voluptatibus debitis dolor minus quasi molestiae maxime, cum autem id excepturi adipisci.",
@@ -38,7 +38,7 @@
   {
     "id": 3,
     "title": "Title333",
-    "techList": ["TechOne", "TechTwo", "TechThree"],
+    "tech": ["TechOne", "TechTwo", "TechThree"],
     "demo": "https://github.com/franco-ortega/portfolio",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates architecto commodi harum accusantium voluptatibus debitis dolor minus quasi molestiae maxime, cum autem id excepturi adipisci.",
     "challenges": [
@@ -55,7 +55,7 @@
   {
     "id": 4,
     "title": "Title4",
-    "techList": ["Tech 1", "Tech 2", "Tech 3"],
+    "tech": ["Tech 1", "Tech 2", "Tech 3"],
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates architecto commodi harum accusantium voluptatibus debitis dolor minus quasi molestiae maxime, cum autem id excepturi adipisci.",
     "challenges": [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, in.",
@@ -71,7 +71,7 @@
   {
     "id": 5,
     "title": "Title5",
-    "techList": ["Tech 1", "Tech 2", "Tech 3", "Tech 4"],
+    "tech": ["Tech 1", "Tech 2", "Tech 3", "Tech 4"],
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates architecto commodi harum accusantium voluptatibus debitis dolor minus quasi molestiae maxime, cum autem id excepturi adipisci.",
     "challenges": [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, in.",

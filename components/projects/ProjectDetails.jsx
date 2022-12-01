@@ -9,7 +9,7 @@ const ProjectDetails = () => {
         <>
           <h2>{data.title}</h2>
           <ul>
-            {data.techList.map((tech, i) => (
+            {data.tech.map((tech, i) => (
               <li key={i}>{tech}</li>
             ))}
           </ul>

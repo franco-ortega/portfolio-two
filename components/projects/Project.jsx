@@ -3,13 +3,13 @@ import GitHubLink from '../links/GitHubLink';
 import WebsiteLink from '../links/WebsiteLink';
 import styles from './Project.module.scss';
 
-const Project = ({ title, techList, github, website, description }) => {
+const Project = ({ title, tech, github, website, description }) => {
   return (
     <li data-testid='project' className={styles.Project}>
       <div>
         <h3>{title}</h3>
         <ul>
-          {techList.map((tech, i) => (
+          {tech.map((tech, i) => (
             <li key={i}>{tech}</li>
           ))}
         </ul>
