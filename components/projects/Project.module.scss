@@ -25,37 +25,6 @@
     h3 {
       font-size: 1.5rem;
     }
-
-    ul {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      // color: var(--bg-color-nav);
-      color: var(--tech-text-color);
-    }
-
-    li::before,
-    li::after {
-      color: var(--tech-decoration-color);
-    }
-
-    li:first-child::before {
-      content: '{';
-      padding-right: 0.5rem;
-    }
-
-    li::after {
-      content: ' |';
-      padding-left: 0.25rem;
-    }
-
-    li:last-child::after {
-      content: '}';
-      padding-left: 0.5rem;
-    }
-
-    li + li {
-      padding-left: 0.5rem;
-    }
   }
 
   @include media-query(small) {
