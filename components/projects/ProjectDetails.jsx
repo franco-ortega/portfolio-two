@@ -1,18 +1,16 @@
 import { useProject } from '../../hooks/useProject';
+import TechList from '../tech/TechList';
+import styles from './ProjectDetails.module.scss';
 
 const ProjectDetails = () => {
   const { data } = useProject();
 
   return (
-    <div data-testid='project-details'>
+    <div className={styles.ProjectDetails} data-testid='project-details'>
       {data && (
         <>
           <h2>{data.title}</h2>
-          <ul>
-            {data.tech.map((tech, i) => (
-              <li key={i}>{tech}</li>
-            ))}
-          </ul>
+          <TechList tech={data.tech} />
           <p>{data.description}</p>
           <ul>
             {data.challenges.map((challenge, i) => (
